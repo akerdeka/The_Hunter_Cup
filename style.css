@@ -1,0 +1,23 @@
+.hours {
+	font-size: 70;
+	margin: 10;
+}
+
+.minutes {
+	font-size: 70;
+	margin: 10;
+}
+
+.seconds {
+	font-size: 70;
+	margin: 10;
+}
+
+div {
+	font-size: 70;
+}
+
+#sectionClock {
+	text-align: center;
+	font-size: 22;
+}

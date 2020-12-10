@@ -14,7 +14,6 @@ var flag = 0;
 
 function startClock() { 
 
-
     /************ INITIALIZE CLOCK ************/ 
     function initializeClock(id, endtime) { 
 

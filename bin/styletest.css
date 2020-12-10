@@ -1,0 +1,33 @@
+@font-face {
+	font-family: 'woodstamp';
+	src: url('Woodstamp.otf');
+	font-weight: normal;
+	font-style: normal;
+	}
+
+
+.hours {
+	font-size: 100;
+	margin: 10;
+}
+
+.minutes {
+	font-size: 100;
+	margin: 10;
+}
+
+.seconds {
+	font-size: 100;
+	margin: 10;
+}
+
+div {
+	font-size: 100;
+}
+
+#sectionClock {
+	text-align: center;
+	font-family: woodstamp;
+	margin-top: 30vh;
+	font-size: 22;
+}

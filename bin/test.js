@@ -64,7 +64,7 @@ function startClock() {
 function sendTrack(){ 
     (function() { 
 
-     var trackUrl = document.getElementById("url");  
+     var trackUrl = document.getElementById("../index.html");  
 
     }()); 
 }

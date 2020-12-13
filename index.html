@@ -3,13 +3,9 @@
 	<script src="javascript/chrono.js"></script>
 	<link rel="stylesheet" href="styles/style.css"/>
 	<body>
-		<a class="equipes" href="equipes/equipe_1.html">Equipe 1</a>
-		<a class="equipes" href="equipes/equipe_2.html"><br>Equipe 2</a>
-		<a class="equipes" href="equipes/equipe_3.html"><br>Equipe 3</a>
-		<a class="equipes" href="equipes/equipe_4.html"><br>Equipe 4</a>
+		<div id="uneDiv">Start</div>
 		<div id="countdown">
 			<div>
-				<!--<span id="countdown_hour" >00</span>:-->
 				<span id="countdown_min" >00</span>:
 				<span id="countdown_sec" >00</span>
 			</div>
@@ -17,8 +13,12 @@
 	</body>
 </html>
 
+
+<script>$("#uneDiv").click(function(){
+	countdownManager.init();
+});</script>
 <!--<html>
-	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="./bin/styletest.css"/>
 	<body>
 		<a id="sendButton" class="button" onclick=" startClock();">START</a>
 		<div id="sectionClock">
@@ -26,6 +26,6 @@
 				<span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span>
 			</div>
 		</div>
-		<script src="chrono.js"></script>
+		<script src="./javascript/chrono.js"></script>
 	</body>
 </html>-->

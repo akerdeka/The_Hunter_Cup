@@ -1,13 +1,16 @@
 countdownManager = {
     // Configuration
-    targetTime: new Date('2020-12-31 00:00:00'), // Date cible du compte à rebours (00:00:00)
+    //targetTime: new Date('2020-12-31 00:00:00'), // Date cible du compte à rebours (00:00:00)
+    targetTime: new Date(Date.now() + 60*60*1000),
+    //currentTime: Date.parse(new Date()),
+    //targetTime: new Date(60*60*1000),
     displayElement: { // Elements HTML où sont affichés les informations
         day:  null,
         hour: null,
         min:  null,
         sec:  null
     },
-     
+
     // Initialisation du compte à rebours (à appeler 1 fois au chargement de la page)
     init: function(){
         // Récupération des références vers les éléments pour l'affichage
@@ -16,12 +19,12 @@ countdownManager = {
         this.displayElement.hour = jQuery('#countdown_hour');
         this.displayElement.min  = jQuery('#countdown_min');
         this.displayElement.sec  = jQuery('#countdown_sec');
-         
+
         // Lancement du compte à rebours
         this.tick(); // Premier tick tout de suite
         window.setInterval("countdownManager.tick();", 1000); // Ticks suivant, répété toutes les secondes (1000 ms)
     },
-     
+
     // Met à jour le compte à rebours (tic d'horloge)
     tick: function(){
         // Instant présent
@@ -58,8 +61,3 @@ countdownManager = {
         return diff;
     }
 };
- 
-jQuery(function($){
-    // Lancement du compte à rebours au chargement de la page
-    countdownManager.init();
-});
